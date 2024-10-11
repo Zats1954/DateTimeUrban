@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="image_dimension">100dp</dimen>
+    <dimen name="height_image">200dp</dimen>
+    <dimen name="margin_">5dp</dimen>
+    <dimen name="shift_text">20dp</dimen>
+</resources>

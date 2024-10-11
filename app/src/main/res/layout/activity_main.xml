@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="@dimen/image_dimension"
+            android:layout_height="@dimen/image_dimension"
+            android:src="@drawable/ic_person_foreground"
+            android:background="@color/ic_person_background"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarMain"
+            />
+
+    <LinearLayout
+        android:id="@+id/lLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/ivFoto"
+        app:layout_constraintTop_toBottomOf="@id/toolbarMain"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+        android:id="@+id/lbName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:paddingHorizontal="@dimen/shift_text"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:textSize="@dimen/text_size"
+        android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="@color/ic_person_background"/>
+
+    <TextView
+        android:id="@+id/lbLastName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+        android:paddingHorizontal="@dimen/shift_text"
+        android:textSize="@dimen/text_size"
+        android:text="@string/last_name" />
+
+
+
+    <EditText
+        android:id="@+id/tvlastName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/text_size"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+
+        android:background="@color/ic_person_background"/>
+
+        <TextView
+            android:id="@+id/lbBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:paddingHorizontal="@dimen/shift_text"
+            android:textSize="@dimen/text_size"
+            android:text="@string/birthday" />
+
+        <EditText
+            android:id="@+id/tvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:textSize="@dimen/text_size"
+            android:maxLength="10"
+            android:hint="DD.MM.YYYY"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="@color/ic_person_background"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/lLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

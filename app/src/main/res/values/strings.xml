@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DatePrime</string>
+    <string name="title_text">Карточка данных"</string>
+    <string name="exit">Выход</string>
+    <string name="save">Сохранить</string>
+    <string name="birthday">День рождения</string>
+    <string name="last_name">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="days_to_birthday">Дней до дня рождения</string>
+    <string name="back">Вернуться</string>
+    <string name="monthes_to_birthday">Месяцев до дня рождения</string>
+    <string name="age">Возраст</string>
+</resources>
